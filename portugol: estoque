@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro qtdemestoque, maxemestoque, minemestoque, mediaemestoque
+
+		escreva("Quantos itens há em estoque?: ")
+		leia(qtdemestoque)
+		escreva("Quantos itens o estoque pode ter no máximo?: ")
+		leia(maxemestoque)
+		escreva("Quantos itens o estoque deve ter no mínimo?: ")
+		leia(minemestoque)
+
+		mediaemestoque = (maxemestoque + minemestoque)/2
+
+		se(qtdemestoque >= mediaemestoque){
+			escreva("Não efetuar compra! ")
+			}
+		senao{
+			escreva("Efetuar compra! ")
+		}
+	}
+}
