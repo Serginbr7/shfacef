@@ -1,0 +1,34 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real valorproduto, valorfinal
+		cadeia formapag
+		
+		escreva("Qual o valor do produto?:\n")
+		leia(valorproduto)
+		escreva("Você pode escolher as seguintes formas de pagar:\n (1) A vista ou em cheque\n (2) A vista no cartão de crédito\n (3) Em duas vezes, sem juros\n (4) Em três vezes com 10% de juros\n")
+		leia(formapag)
+		
+		se(formapag == "1"){
+		valorfinal = valorproduto*0.9
+		escreva("O valor com desconto é de: ",valorfinal)
+			}
+			senao se(formapag == "2"){
+			valorfinal = valorproduto*0.95
+			escreva("O valor com desconto é de: ", valorfinal)
+			}
+				senao se(formapag == "3"){
+				valorfinal = valorproduto/2
+				escreva("O valor total é de duas parcelas de: ", valorfinal)
+				}
+					senao se(formapag == "4"){
+					valorfinal = valorproduto*1.1/3
+					escreva("O valor total é de três parcelas de: ", valorfinal)
+					}
+		senao{
+		escreva("Erro ao calcular, reveja os parâmetros. ")
+			}
+		}
+	}
