@@ -1,0 +1,11 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro opcao
+	real 
+
+		escreva("Escolha uma opção:\n (1)")
+	}
+}
