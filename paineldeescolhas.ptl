@@ -1,0 +1,65 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro opcao, pouim, htrabalho
+		real num, quadrado, valorhora, salario
+		cadeia sair
+
+		escreva("Escolha uma opção: \n (1) Calcular o quadrado de um número\n (2) Descobrir se um número é par ou ímpar\n (3) Escrever a palavra 'SONHO'\n (4) Calcular salário do vendedor de carros\n (5) Sair do programa \n ")
+		leia(opcao)
+
+		escolha(opcao){
+
+			caso 1:
+			escreva("Digite o número: \n ")
+			leia(num)
+			quadrado = num * num
+			escreva("O quadrado é: ",quadrado)
+			pare
+
+			caso 2:
+			escreva("Digite um número para saber se é par ou ímpar: \n ")
+			leia(pouim)
+			se(pouim % 2 !=0){
+			escreva("O número é impar ")
+			}
+			senao{
+			escreva("O número é par ")
+			}
+
+			caso 3:
+			escreva("SONHO ")
+			pare
+
+			caso 4:
+			escreva("Quantas horas por mês o colaborador trabalha?: \n ")
+			leia(htrabalho)
+			escreva("Qual o valor pago pela hora? \n ")
+			leia(valorhora)
+			
+			salario = valorhora * htrabalho
+			
+			escreva("O salário do colaborador é de: ", salario )
+			pare
+
+			caso 5:
+			escreva("Tem certeza que deseja sair do programa? ")
+			leia(sair)
+			se(sair == "sim"){
+			escreva("Encerrando programa... ")
+			pare
+			}
+				senao se(sair == "não"){
+				escreva("Retornando ao menu... ")
+			}
+			senao{
+			escreva("Opção inválida, reveja! ")
+			}
+
+			caso contrario:
+				escreva("Inválido! Escolha uma opção de 1 a 5. ")		
+		}				
+	}
+}
